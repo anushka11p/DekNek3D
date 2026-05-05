@@ -1,0 +1,86 @@
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--foreground);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primaryButton, .secondaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.primaryButton {
+  background: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+}
+
+.primaryButton:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.secondaryButton {
+  background: var(--surface);
+  color: var(--foreground);
+  border: 1px solid var(--surface-border);
+}
+
+.secondaryButton:hover {
+  background: var(--surface-border);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.featureCard {
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.featureCard h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.featureCard p {
+  opacity: 0.7;
+  font-size: 0.95rem;
+}
